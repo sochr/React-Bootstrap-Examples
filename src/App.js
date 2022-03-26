@@ -1,12 +1,12 @@
-import React from 'react';
-import { MemoryRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { MemoryRouter, Switch, Route } from "react-router-dom";
 
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
-import { LinkContainer } from 'react-router-bootstrap';
+import Container from "react-bootstrap/Container";
+import Button from "react-bootstrap/Button";
+import ButtonToolbar from "react-bootstrap/ButtonToolbar";
+import { LinkContainer } from "react-router-bootstrap";
 
-import './App.css';
+import "./App.css";
 
 const Home = () => <span>Home</span>;
 
@@ -17,10 +17,10 @@ const Users = () => <span>Users</span>;
 const App = () => (
   <MemoryRouter>
     <Container className="p-3">
-      <Container className="p-5 mb-4 bg-light rounded-3">
+      <Container className="p-4 mb-4 bg-light rounded-3">
         <h1 className="header">Welcome To React-Bootstrap</h1>
         <h2>
-          Current Page is{' '}
+          Current Page is{" "}
           <Switch>
             <Route path="/about">
               <About />
@@ -34,7 +34,7 @@ const App = () => (
           </Switch>
         </h2>
         <h2>
-          Navigate to{' '}
+          Navigate to{" "}
           <ButtonToolbar className="custom-btn-toolbar">
             <LinkContainer to="/">
               <Button>Home</Button>
