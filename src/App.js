@@ -17,7 +17,7 @@ const Users = () => <span>Users</span>;
 
 const App = () => (
   <MemoryRouter>
-    <Navbar className="">
+    <Navbar>
       <Container>
         <h2>
           Navigate to{" "}
